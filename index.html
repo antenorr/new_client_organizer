@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Membership Signup</title>
+        <!-- Compiled and minified CSS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+        <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    
+
+<nav class="sidenav-trigger grey darken-2">
+    <div class="container">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><i class="medium material-icons">assignment_ind</i>Organizer</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="sass.html">Sass</a>
+                </li>
+                <!-- <li>
+                    <a href="badges.html">Components</a>
+                </li>
+                <li>
+                    <a href="collapsible.html">Javascript</a>
+                </li>
+                <li>
+                    <a href="mobile.html">Mobile</a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+    <li>
+        <a href="sass.html">Sass</a>
+    </li>
+    <!-- <li>
+        <a href="badges.html">Components</a>
+    </li>
+    <li>
+        <a href="collapsible.html">Javascript</a>
+    </li>
+    <li>
+        <a href="mobile.html">Mobile</a>
+    </li> -->
+</ul>
+
+<!-- ***********    Below is the form for the input   *************-->
+
+<div class="row">
+    <div class="col s12 ">
+        <div class="card ">
+            <div class="card-content">
+                <span class="card-title">Add New Client</span>
+                <small>Please enter all necessary information</small>
+            </div>
+            <div class="card-content grey lighten-4">
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12 m6">
+                                <input placeholder="First Name" id="input-first-name" type="text"  pattern="[A-Za-z]{2,10}" class="validate">
+                                <label for="input-first-name">First Name</label>
+                                <span class="helper-text" data-error="Up to 10 letters only" data-success="we're good!">Letters only</span>
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <input id="input-last-name" type="text" pattern="[A-Za-z]{2,10}" class="validate">
+                                <label for="input-last-name">Last Name</label>
+                                <span class="helper-text" data-error="Up to 10 letters only" data-success="we're good!">Letters only</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 m6">
+                                <input id="input-phone" type="tel" pattern="[0-9]{10}" autocomplete='tel' class="validate">
+                                <label for="input-phone">Phone</label>
+                                <span class="helper-text" data-error="Numbers only" data-success="we're good!">Numbers only - no spaces</span>
+                            </div>                  
+                            <div class="input-field col s12 m6">
+                                <input  id="input-email" type="email" autocomplete='email' class="validate">
+                                <label for="input-email">Email</label>
+                                <span class="helper-text" data-error="unacceptable" data-success="we're good!">Valid email address only</span>
+                            </div>
+                        </div>
+
+                        <button class="btn waves-effect waves-light green" type="submit" id="submit-button" name="action">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- TABLE BELOW   -->
+<hr />
+    <table class="striped centered responsive-table" id="employee-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>void</th>
+            </tr>
+        </thead>
+       
+    
+        <tbody>
+            <tr>
+                <!-- <td>Alvin</td>
+                <td>Eclair</td>
+                <td>$0.87</td>
+                <td>email.com</td> -->
+            </tr>
+
+        </tbody>
+    </table>
+
+
+
+
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
